@@ -24,6 +24,9 @@ build/deploy
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
+TestResult.xml
+
+build/
 
 *_i.c
 *_p.c
