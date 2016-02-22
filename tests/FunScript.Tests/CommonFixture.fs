@@ -66,7 +66,7 @@ let check (quote:Quotations.Expr) =
 
 let checkRx (quote:Quotations.Expr) =
    let expectedResult = quote.EvalUntyped()
-   checkAreEqualWith(sprintf "var Rx = require('%s../../paket-files/Reactive-Extensions/RxJS/dist/rx.all.js');" __SOURCE_DIRECTORY__)
+   checkAreEqualWith(sprintf "var Rx = require('%s/../../paket-files/Reactive-Extensions/RxJS/dist/rx.all.js');" __SOURCE_DIRECTORY__)
         compileWithRx expectedResult quote
 
 let checkAsync (quote:Quotations.Expr<'a Async>) =
